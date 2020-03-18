@@ -30,7 +30,7 @@ public class TestTransServiceImpl implements TestTransService {
      *          如果catch子事务异常，父事务不会回滚
      */
     @Override
-   // @Transactional(propagation = Propagation.REQUIRED)
+    @Transactional(propagation = Propagation.REQUIRED)
     public void testPropagationTrans() {
         stuService.saveParent();
             stuService.saveChildren();

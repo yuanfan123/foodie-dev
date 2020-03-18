@@ -1,4 +1,4 @@
-package com.imooc.comfig;
+package com.imooc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * @Classname CorsConfig
- * @Description TODO
+ * @Description
  * @Date 2020/3/3 23:08
  * @Created by lyf
  */

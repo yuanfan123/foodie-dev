@@ -1,8 +1,7 @@
-package com.imooc.comfig;
+package com.imooc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -14,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @Classname Swagger2
- * @Description TODO
+ * @Description Swagger2
  * @Date 2020/3/3 0:17
  * @Created by lyf
  */

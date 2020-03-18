@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 /**
  * @Classname UserBO
- * @Description TODO
+ * @Description
  * @Date 2020/3/2 23:22
  * @Created by lyf
  */

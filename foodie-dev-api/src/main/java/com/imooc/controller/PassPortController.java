@@ -68,6 +68,8 @@ public class PassPortController {
         Users userResult = userService.createUser(userBO);
         setNullProperty(userResult);
         CookieUtils.setCookie(request,response,"user", JsonUtils.objectToJson(userResult),true);
+        // TODO 生成用户token ,存入redis会话
+        // TODO 同步购物车数据
         return IMOOCJSONResult.ok();
     }
 
@@ -109,8 +111,8 @@ public class PassPortController {
                                   HttpServletResponse response){
         //清除用户相关的cookie
         CookieUtils.deleteCookie(request,response,"user");
-        // TODO 用户退出登录，需要清空购物车
-        // TODO 分布式回话中需要清除用户数据
+        // TODO 生成用户token ,存入redis会话
+        // TODO 同步购物车数据
 
         return IMOOCJSONResult.ok();
     }
